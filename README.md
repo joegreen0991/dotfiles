@@ -24,6 +24,12 @@ Alternatively, to update while avoiding the confirmation prompt:
 set -- -f; source bootstrap.sh
 ```
 
+### Install Packages and Configure MacOS
+
+```bash
+./setup.sh
+```
+
 ### Add custom commands without creating a new fork
 
 If `~/.extra` exists, it will be sourced along with the other files. You can use this to add a few custom commands without the need to fork this entire repository, or to add commands you don’t want to commit to a public repository.
@@ -45,17 +51,10 @@ You could also use `~/.extra` to override settings, functions and aliases from m
 
 ### Sensible macOS defaults
 
-When setting up a new Mac, you may want to set some sensible macOS defaults:
+Mac settings are configured in: `.macos`
 
-```bash
-./.macos
-```
 
 ### Install Homebrew formulae
 
-When setting up a new Mac, you may want to install some common [Homebrew](http://brew.sh/) formulae (after installing Homebrew, of course):
-
-```bash
-./brew.sh
-```
+Homebrew packages are configured in: `brew.sh`
 
