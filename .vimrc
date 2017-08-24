@@ -78,6 +78,9 @@ set nojoinspaces
 set textwidth=120
 set colorcolumn=+1
 
+" Colors
+colorscheme gruvbox
+
 " Numbers
 set number
 set numberwidth=5
