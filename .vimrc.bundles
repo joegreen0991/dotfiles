@@ -18,11 +18,18 @@ call plug#begin('~/.vim/bundle')
 " Tools
 " ===============
 
+" Set sensible defaults
+Plug 'tpope/vim-sensible'
+
+" File search
+Plug 'kien/ctrlp.vim'
+
 " Powerbar
 Plug 'bling/vim-airline'
 
-" Colors
+" Colours
 Plug 'morhetz/gruvbox'
+Plug 'altercation/vim-colors-solarized'
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -39,9 +46,19 @@ Plug 'airblade/vim-gitgutter'
 " Quick commenting
 Plug 'scrooloose/nerdcommenter'
 
+" Autocomplete within current buffer
+Plug 'Shougo/neocomplete.vim'
+
+Plug 'editorconfig/editorconfig-vim'
+
 " Languages
 " ===============
 
+" HCL formatting for Terraform etc
+Plug 'hashivim/vim-terraform'
+
+" All the languages
+Plug 'sheerun/vim-polyglot'
 
 if g:has_async
   Plug 'w0rp/ale'
