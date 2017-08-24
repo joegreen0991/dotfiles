@@ -21,8 +21,8 @@ call plug#begin('~/.vim/bundle')
 " Powerbar
 Plug 'bling/vim-airline'
 
-" Colours
-Plug 'altercation/vim-colors-solarized'
+" Colors
+Plug 'morhetz/gruvbox'
 
 " Git
 Plug 'tpope/vim-fugitive'
