@@ -95,11 +95,14 @@ function a() {
 	fi;
 }
 
-# `v` with no arguments opens the current directory in Vim, otherwise
-# opens the given location
+# `v` with no arguments opens the current directory in Vim
+# `v +` installs plugins added to ~/.vimrc.bundles
+# otherwise opens the given location
 function v() {
 	if [ $# -eq 0 ]; then
 		vim .;
+	elif [ "$@" == "+" ]; then
+		vim +PlugInstall +qall
 	else
 		vim "$@";
 	fi;
