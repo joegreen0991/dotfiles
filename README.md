@@ -27,7 +27,7 @@ set -- -f; source bootstrap.sh
 ### Install Packages and Configure MacOS
 
 ```bash
-./setup.sh
+source setup.sh
 ```
 
 ### Add custom commands without creating a new fork
