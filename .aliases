@@ -13,7 +13,6 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/Projects"
 alias g="git"
-alias v="vim"
 alias h="history"
 alias j="jobs"
 
